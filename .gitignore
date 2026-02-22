@@ -1,3 +1,6 @@
+# Created by https://www.toptal.com/developers/gitignore/api/c,c++,cmake,visualstudio,visualstudiocode,clion,clion+all,clion+iml,xcode,vcpkg,conan
+# Edit at https://www.toptal.com/developers/gitignore?templates=c,c++,cmake,visualstudio,visualstudiocode,clion,clion+all,clion+iml,xcode,vcpkg,conan
+
 ### C ###
 # Prerequisites
 *.d
@@ -318,24 +321,35 @@ CMakeUserPresets.json
 # External projects
 *-prefix/
 
-### Git ###
-# Created by git for backups. To disable backups in Git:
-# $ git config --global mergetool.keepBackup false
-*.orig
+### Conan ###
+# Conan build information
+conan.lock
+conanbuildinfo.*
+conaninfo.txt
+graph_info.json
 
-# Created by git when using merge tools for conflicts
-*.BACKUP.*
-*.BASE.*
-*.LOCAL.*
-*.REMOTE.*
-*_BACKUP_*.txt
-*_BASE_*.txt
-*_LOCAL_*.txt
-*_REMOTE_*.txt
+## Various built-in generators
+# cmake_find_package generator https://docs.conan.io/en/latest/reference/generators/cmake_find_package.html
+Find*.cmake
 
-### TortoiseGit ###
-# Project-level settings
-/.tgitconfig
+# cmake_paths generator https://docs.conan.io/en/1.4/integrations/cmake/cmake_paths_generator.html
+conan_paths.*
+
+# Environment activation scripts produced by https://docs.conan.io/en/latest/mastering/virtualenv.html#virtualenv-generator
+activate_run.ps1
+activate_run.sh
+deactivate_run.ps1
+deactivate_run.sh
+environment_run.ps1.env
+environment_run.sh.env
+
+### vcpkg ###
+# Vcpkg
+
+vcpkg-manifest-install.log
+
+## Manifest Mode
+vcpkg_installed/
 
 ### VisualStudioCode ###
 .vscode/*
@@ -372,14 +386,6 @@ xcuserdata/
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
-
-### XcodeInjection ###
-# Code Injection
-#
-# After new code Injection tools there's a generated folder /iOSInjectionProject
-# https://github.com/johnno1962/injectionforxcode
-
-iOSInjectionProject/
 
 ### VisualStudio ###
 ## Ignore Visual Studio temporary files, build results, and
@@ -771,3 +777,5 @@ FodyWeavers.xsd
 
 ### VisualStudio Patch ###
 # Additional files built by Visual Studio
+
+# End of https://www.toptal.com/developers/gitignore/api/c,c++,cmake,visualstudio,visualstudiocode,clion,clion+all,clion+iml,xcode,vcpkg,conan
