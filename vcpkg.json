@@ -1,6 +1,75 @@
 {
-    "name": "ashiba",
-    "version-string": "0.1.0",
-    "dependencies": [
-    ]
+  "name": "ashiba",
+  "version-string": "0.1.0",
+  "dependencies": [
+    "assimp",
+    "drlibs",
+    "directx-headers",
+    {
+        "name": "directxmath",
+        "features": [
+            "dx11",
+            "dx12"
+        ]
+    },
+    {
+        "name": "directxmesh",
+        "features": [
+            "dx12"
+        ]
+    },
+    {
+        "name": "directxtex",
+        "features": [
+            "dx11",
+            "dx12"
+        ]
+    },
+    {
+        "name": "directxtk",
+        "features": [
+            "gameinput",
+            "tools",
+            "xaudio2-8",
+            "xaudio2-9"
+        ]
+    },
+    {
+        "name": "directxtk12",
+        "features": [
+            "tools",
+            "xaudio2-9",
+            "xinput"
+        ]
+    },
+    "drlibs",
+    {
+        "name": "glad",
+        "features": [
+            "extensions",
+            "loader"
+        ]
+    },
+    "glfw3",
+    {
+        "name": "imgui",
+        "features": [
+            "docking-experimental",
+            "dx11-binding",
+            "dx12-binding",
+            "glfw-binding",
+            "opengl3-binding",
+            "vulkan-binding"
+        ]
+    },
+    "imguizmo",
+    "implot",
+    "nlohmann-json",
+    "openal-soft",
+    "stb",
+    "vk-bootstrap",
+    "volk",
+    "vulkan",
+    "vulkan-memory-allocator"
+  ]
 }
