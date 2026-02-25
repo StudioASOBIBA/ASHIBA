@@ -7,4 +7,4 @@ project(ashiba
 )
 
 message(TRACE "[Ashiba] Building Ashiba runtime library")
-add_subdirectory(Runtime)
+add_subdirectory(Engine/Runtime)
